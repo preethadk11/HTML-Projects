@@ -39,7 +39,11 @@ def story1(win):
 def story2(win):
       def final(t2:Toplevel,Name,Friend,Location,Twists,Weapon):
             text='''
-                  #to be written
+            In the dark alleys of {Location}, a chilling crime unfolded. {Name} and their friend {Friend} found themselves entangled in a web of mystery and suspense.
+            As they delved deeper into the investigation, unexpected twists emerged at every corner. The city was rife with secrets, and danger lurked in the shadows.
+            Armed with only their wits and a trusty {Weapon}, {Name} and {Friend} navigated through the treacherous terrain of deceit and betrayal.
+            Each clue they uncovered brought them closer to the truth, but also deeper into peril. The night was filled with uncertainty, and trust was a rare commodity.
+            In the end, it was their unwavering determination and courage that led them to solve the crime, bringing justice to the city and restoring peace to {Location}.
 '''
             t2.geomentry("450x450")
             Label(t2,text="Story",fg='White',wraplength=t2.winfo_width()).place(x=,y=)
