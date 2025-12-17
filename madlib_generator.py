@@ -38,36 +38,36 @@ def story1(win):
      SubmitButton.place(x=150,y=200)
 def story2(win):
       def final(t2:Toplevel,Name,Friend,Location,Twists,Weapon):
-            text='''
+            text=f'''
             In the dark alleys of {Location}, a chilling crime unfolded. {Name} and their friend {Friend} found themselves entangled in a web of mystery and suspense.
             As they delved deeper into the investigation, unexpected twists emerged at every corner. The city was rife with secrets, and danger lurked in the shadows.
             Armed with only their wits and a trusty {Weapon}, {Name} and {Friend} navigated through the treacherous terrain of deceit and betrayal.
             Each clue they uncovered brought them closer to the truth, but also deeper into peril. The night was filled with uncertainty, and trust was a rare commodity.
             In the end, it was their unwavering determination and courage that led them to solve the crime, bringing justice to the city and restoring peace to {Location}.
 '''
-            t2.geomentry("450x450")
-            Label(t2,text="Story",fg='White',wraplength=t2.winfo_width()).place(x=,y=)
-            Label(t2,text=text,wraplength=t2.winfo_width()).place(x=,y=)
-      Newscreen=Toplevel(win,bg="black")
-      Newscreen.geomentry("450x450")
-      Label(Newscreen,text="Crime Story").place(x=,y=)
-      Label(Newscreen,text="Name").place(x=,y=)
-      Label(Newscreen,text="Friend Name").place(x=,y=)
-      Label(Newscreen,text="Location").place(x=,y=)
-      Label(Newscreen,text="Twists").place(x=,y=)
-      Label(Newscreen,text="Weapon").place(x=,y=)
+            t2.geometry("450x450")
+            Label(t2,text="Story",fg='orange',wraplength=t2.winfo_width()).place(x=155,y=230)
+            Label(t2,text=text,wraplength=t2.winfo_width()).place(x=0,y=250)
+      Newscreen=Toplevel(win,bg="yellow")
+      Newscreen.geometry("450x450")
+      Label(Newscreen,text="Crime Story").place(x=150,y=0)
+      Label(Newscreen,text="Name").place(x=0,y=30)
+      Label(Newscreen,text="Friend Name").place(x=0,y=60)
+      Label(Newscreen,text="Location").place(x=0,y=90)
+      Label(Newscreen,text="Twists").place(x=0,y=120)
+      Label(Newscreen,text="Weapon").place(x=0,y=150)
       Name=Entry(Newscreen,width=20)
-      Name.place(x=,y=)
+      Name.place(x=150,y=30)
       Friend=Entry(Newscreen,width=20)
-      Friend.place(x=,y=)
+      Friend.place(x=150,y=60)
       Location=Entry(Newscreen,width=20)
-      Location.place(x=,y=)
+      Location.place(x=150,y=90)
       Twists=Entry(Newscreen,width=20)
-      Twists.place(x=,y=)
+      Twists.place(x=150,y=120)
       Weapon=Entry(Newscreen,width=20)
-      Weapon.place(x=,y=)
+      Weapon.place(x=150,y=150)
       SubmitButton=Button(Newscreen,text="Submit",fg="Yellow",bg="white",command=lambda:final(Newscreen,Name.get(),Friend.get(),Location.get(),Twists.get(),Weapon.get()))
-      SubmitButton.place(x=y=)
+      SubmitButton.place(x=150,y=200)
 
      
      
